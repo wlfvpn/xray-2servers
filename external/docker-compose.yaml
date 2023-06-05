@@ -5,6 +5,7 @@ services:
     container_name: xray-external
     volumes:
       - $PWD:/etc/xray
+      - $PWD/iran.dat:/usr/bin/iran.dat
       - $PWD/cert:/root/cert
       - /dev/shm/:/dev/shm/
     restart: always
